@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation Acoustic Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aviation Acoustic Analyzer</h1>
+        <p>Analyze sound phenomena in aviation with real-time simulations.</p>
+    </header>
+    <main>
+        <section id="doppler-effect">
+            <h2>Doppler Effect Simulation</h2>
+            <canvas id="dopplerCanvas" width="500" height="300"></canvas>
+            <div>
+                <label for="speed">Speed (m/s): </label>
+                <input type="range" id="speed" min="0" max="500" value="100">
+                <span id="speedValue">100</span>
+            </div>
+            <div>
+                <label for="frequency">Frequency (Hz): </label>
+                <input type="range" id="frequency" min="200" max="1000" value="440">
+                <span id="frequencyValue">440</span>
+            </div>
+        </section>
+        <section id="noise-analysis">
+            <h2>Aircraft Noise Analysis</h2>
+            <p>Simulate noise levels for different aircraft engines.</p>
+            <button id="simulateNoise">Simulate Noise Levels</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
